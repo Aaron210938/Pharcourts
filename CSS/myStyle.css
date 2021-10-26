@@ -1,0 +1,301 @@
+/*
+All CSS styles follow this format:
+SELECTOR (thing you want to style){
+ATTRIBUTE1:Value;
+ATTRIBUTE2:Value;
+}
+
+*/
+
+:root {
+  --alt-bg: #dbdbdb;
+  --main-bg: #f1f1f1;
+  --alt-bg2: #474241;
+  --main-fg: #000000;
+  --primary: #A7A885;
+  --secondary: #7a90cd;
+  --hl: #D0CCB9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* HEADER */
+.header {
+  top: 0;
+  width: 100% !important;
+  overflow-x: hidden !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--alt-bg);
+}
+
+
+.header-left {
+  display: flex;
+}
+
+.contacts{
+  padding-right: 50px;
+}
+
+.contacts a:link{
+  text-decoration: none;
+  color: var(--main-fg);
+}
+
+.contacts a:visited{
+  text-decoration: none;
+  color: var(--main-fg);
+}
+
+.contacts a:hover{
+  text-decoration: underline;
+  color: var(--main-fg);
+}
+
+.contacts a:active{
+  text-decoration: underline;
+  color: var(--main-fg);
+}
+
+.logo {
+  padding-left: 50px;
+  padding-top: 5px;
+  color: var(--main-fg);
+  justify-content: flex-start;
+}
+
+
+/* AGENTS */
+
+.agent_index{
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.agent_mini{
+  display:flex;
+  flex-direction: row;
+}
+
+.agent_individual{
+  background: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.agent_individual img{
+  /* width: 300px; */
+  display: flex;
+}
+
+.portrait {
+  padding: 100px;
+}
+
+/* NAVIGATION */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  text-align: left;
+  color: var(--main-bg);
+  display: inline-block;
+  padding: 8px;
+  flex: 0 1 auto;
+  transition-duration: 0.4s;
+}
+
+.nav li:hover {
+  background-color: var(--secondary);
+  color: var(--main-bg);
+  padding: 8px;
+}
+
+/* nav text */
+.nav a {
+  color: var(--main-fg);
+  padding: 8px;
+  text-decoration: none;
+  /* remove underline from URLs */
+}
+
+.nav a:hover {
+  color: var(--main-fg);
+  padding: 8px;
+}
+
+.counter{
+  color: var(--main-fg);
+  padding-top: 24px;
+  position: absolute;
+  right: 230px;
+}
+
+.main {
+  display: flex;
+  padding-top: 10px;
+}
+
+
+.blurb{
+  display:flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+textarea {
+  resize: none;
+}
+
+.subheading {
+  font-weight: bold;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+/* submit button */
+.submit {
+  float: right;
+}
+
+/* LISTING */
+
+.about{
+  color: var(--main-fg);
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  flex-wrap: wrap;
+}
+
+
+.listing_content{
+  color: var(--main-fg);
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+  flex-wrap: wrap;
+}
+
+.listing_content a{
+  background: var(--main-bg);
+  padding: 20px;
+  margin: 10px;
+  width: 320px;
+  color: var(--main-fg);
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.listing_content a:hover{
+  background: var(--secondary);
+}
+
+.listing_content img{
+  width: 320px;
+}
+
+.listing_info{
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+  overflow-x: hidden !important;
+}
+
+.name{
+  text-align: center;
+}
+
+.listing_main{
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+/* .listing_main p{ */
+/*   width: 800px; */
+/* } */
+
+/* .listing_main img{ */
+/*   width: 800px; */
+/* } */
+
+.listing_contacts{
+  display:flex;
+  flex-direction: column;
+  width: 300px;
+  /* height: auto; */
+  /* background: var(--main-bg); */
+}
+
+.price{
+  padding: 15px;
+  margin: 5px;
+  font-size: x-large;
+  background: var(--main-bg);
+}
+
+.agent_info{
+  padding: 20px;
+  background: var(--main-bg);
+}
+
+.login{
+display: flex;
+text-align: center;
+justify-content: center;
+padding-top: 150px;
+}
+
+.login h1{
+  padding-right: 40px;
+}
+
+.listing_page{
+  display:flex;
+  flex-direction: column;
+}
+
+.admin_pannel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+}
+
+.add_entry{
+  display:flex;
+  justify-content: center;
+}
